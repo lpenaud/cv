@@ -83,7 +83,7 @@ const translateAllDataText = function (language) {
 const translateProExp = function translateProfessionalExperience (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-professional-experience');
-    removeAllChild(ul);
+    removeAllChildren(ul);
     getTranslation(language)
       .then(translation => {
         const { proExp } = translation;
@@ -98,7 +98,7 @@ const translateProExp = function translateProfessionalExperience (language) {
 const translateLanguage = function (language) {
   return new Promise(resolve => {
     const div = document.querySelector('#div-parent-languages');
-    removeAllChild(div);
+    removeAllChildren(div);
     getTranslation(language)
       .then(translation => {
         const { languages } = translation;
@@ -113,7 +113,7 @@ const translateLanguage = function (language) {
 const translateEducation = function (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-education');
-    removeAllChild(ul);
+    removeAllChildren(ul);
     getTranslation(language)
       .then(translation => {
         const { education } = translation;
@@ -128,7 +128,7 @@ const translateEducation = function (language) {
 const translateInterest = function (language) {
   return new Promise(resolve => {
     const ul = document.querySelector('#ul-interest');
-    removeAllChild(ul);
+    removeAllChildren(ul);
     getTranslation(language)
       .then(translation => {
         const { interest } = translation;
@@ -142,7 +142,7 @@ const translateInterest = function (language) {
 const translateVarious = function (language) {
   return new Promise(resolve => {
     const div = document.querySelector('#div-sub-various');
-    removeAllChild(div);
+    removeAllChildren(div);
     getTranslation(language)
       .then(translation => {
         const { various } = translation;
