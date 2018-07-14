@@ -49,13 +49,8 @@ h2 {
     margin-bottom: 1em;
 }
 
-#div-personal span {
-    display: inline-block;
+#div-personal span, select {
     margin-left: 1em;
-}
-
-#div-personal a:hover span {
-    font-weight: bold;
 }
 
 #object-skill {
@@ -107,8 +102,4 @@ h2 {
 
 #figure-printable {
     display: none;
-}
-
-#select-languages {
-    margin-left: 15px;
 }
