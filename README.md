@@ -8,4 +8,4 @@ All script are under (unless otherwise stated) [GPLv3](https://www.gnu.org/licen
 
 ## TODO
 - [ ] Minify files for gh-pages branch
-- [ ] Add a spinner during the loading locales
+- [x] Add a spinner during the loading locales
