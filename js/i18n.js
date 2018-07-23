@@ -21,7 +21,7 @@ const getTranslation = function (language) {
     const index = translations.findIndex(translation => translation.language === language);
 
     if (index === -1) {
-      ajaxGetJSONPromise(window.location + 'i18n/' + language + '.json')
+      ajaxGetJSONPromise(`i18n/${language}.json`)
         .then(translation => {
           for (let i = 0; i < translation.proExp.length; i++) {
             const { dates } = translation.proExp[i];
@@ -43,7 +43,9 @@ const getTranslation = function (language) {
           resolve(translation);
         })
         .catch((err) => {
-          if (err.status === 404) resolve(getTranslation('en'));
+          if (err.status === 404) {
+            getTranslation('en').then(resolve)
+          }
           reject(err);
         });
     } else {
@@ -97,16 +99,43 @@ const translateProExp = function translateProfessionalExperience (language) {
 
 const translateLanguage = function (language) {
   return new Promise(resolve => {
-    const div = document.querySelector('#div-parent-languages');
-    removeAllChildren(div);
-    getTranslation(language)
-      .then(translation => {
+    getStarsLanguage().then(({ regular, solid }) => {
+      const div = document.querySelector('#div-parent-languages');
+      removeAllChildren(div);
+      getTranslation(language).then(translation => {
         const { languages } = translation;
         for (let i = 0; i < languages.skills.length; i++) {
-          div.appendChild(createDivLanguage(languages.levels, languages.skills[i]));
+          div.appendChild(createDivLanguage(
+            languages.levels,
+            languages.skills[i],
+            { regular, solid }
+          ));
         }
         resolve();
       });
+    })
+  });
+}
+
+const getStarsLanguage = function () {
+  return new Promise((resolve, reject) => {
+    const images = { regular: '', solid: '' };
+    try {
+      images.regular = document.querySelector('i.fa.star-regular').innerHTML;
+      images.solid = document.querySelector('i.fa.star-solid').innerHTML;
+      resolve(images);
+    } catch (err) {
+      if (err.name === 'TypeError') {
+        Promise.all([
+          ajaxGetPromise('images/fontawesome/star-regular.svg'),
+          ajaxGetPromise('images/fontawesome/star-solid.svg')
+        ]).then((data) => {
+          images.regular = data[0];
+          images.solid = data[1];
+          resolve(images);
+        }).catch(reject);
+      } else reject(err);
+    }
   });
 }
 
@@ -170,7 +199,14 @@ const translatePrint = function (language) {
 }
 
 const translateAll = function (language) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
+    const colCenterDivs = document.querySelectorAll('#div-col-center > div')
+    for (let i = 0; i < colCenterDivs.length; i++) {
+      const div = colCenterDivs[i];
+      div.style.display = div.id === 'div-spiner'
+        ? 'inherit'
+        : 'none';
+    }
     translateAllDataText(language).then(() => {
       translateProExp(language);
       translateLanguage(language);
@@ -178,7 +214,13 @@ const translateAll = function (language) {
       translateInterest(language);
       translateVarious(language);
       translatePrint(language);
+      for (let i = 0; i < colCenterDivs.length; i++) {
+        const div = colCenterDivs[i];
+        div.style.display = div.id === 'div-spiner'
+          ? 'none'
+          : 'inherit';
+      }
       resolve(language);
-    });
+    })
   });
 }

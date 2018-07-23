@@ -4,13 +4,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title data-text="page-title">CV - Loïc Penaud</title>
-	<meta name="google" content="notranslate">
-	<meta name="Description" lang="fr" content="CV de Loïc Penaud développeur en JavaScript, nodejs, PHP, Python, Java, et plein d'autres">
-	<meta name="Description" lang="en" content="Résumé of Loïc Penaud developer in JavaScript, nodejs, PHP, Python, Java and many others">
+        <meta name="google" content="notranslate">
+        <meta name="Description" lang="fr" content="CV de Loïc Penaud développeur en JavaScript, nodejs, PHP, Python, Java, et plein d'autres">
+        <meta name="Description" lang="en" content="Résumé of Loïc Penaud developer in JavaScript, nodejs, PHP, Python, Java and many others">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-            crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css" media="screen">
         <script src="js/html.js"></script>
@@ -31,25 +29,24 @@
                                 <br><span id="span-years-old"></span> <span data-text="years-old"></span>
                             </p>
                             <div class="list-group text-left" id="div-personal">
-                                <a class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank" style="color: #0051ff">
-                                    <i class="fa fa-envelope fa-2x"></i>
+                                <a id="a-email" class="list-group-item list-group-item-action" href="mailto:l.penaud@zaclys.net" target="_blank">
+                                    <i class="fa envelope-solid"></i>
                                     <span>l.penaud@zaclys.net</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="https://github.com/lpenaud" target="_blank" style="color: #333333">
-                                    <i class="fa fa-github fa-2x"></i>
+                                <a id="a-github" class="list-group-item list-group-item-action" href="https://github.com/lpenaud" target="_blank">
+                                    <i class="fa github-brands"></i>
                                     <span>@lpenaud</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/loïc-penaud-296067129" target="_blank"
-                                    style="color: #0077B5">
-                                    <i class="fa fa-linkedin-square fa-2x"></i>
+                                <a id="a-linkedin" class="list-group-item list-group-item-action" href="https://www.linkedin.com/in/loïc-penaud-296067129" target="_blank">
+                                    <i class="fa linkedin-brands"></i>
                                     <span>Loïc Penaud</span>
                                 </a>
                                 <a id="a-print" class="list-group-item list-group-item-action" href="index.pdf" target="_blank">
-                                    <i class="fa fa-print fa-2x"></i>
+                                    <i class="fa print-solid"></i>
                                     <span style="text-transform: capitalize" data-text="print"></span>
                                 </a>
-                                <a class="list-group-item list-group-item-action">
-                                    <i class="fa fa-language fa-2x"></i>
+                                <a id="a-language" class="list-group-item list-group-item-action">
+                                    <i class="fa language-solid"></i>
                                     <select id="select-languages" class="selectpicker"></select>
                                 </a>
                             </div>
@@ -58,59 +55,77 @@
                 </div>
 
                 <div id="div-col-center" class="col-md-9">
+                    <div id="div-spiner" class="mx-auto text-center">
+                        <h3>Chargement des locales en cours...</h3>
+                    </div>
                     <div>
-                        <h2 id="h2-professional-experience" data-text="professional-experience"></h2>
+                        <h2 id="h2-professional-experience" class="text-capitalize" data-text="professional-experience"></h2>
                         <ul id="ul-professional-experience" class="list-group"></ul>
                     </div>
                     <div>
-                        <h2 data-text="skills"></h2>
-                        <h3 data-text="computer-science"></h3>
+                        <h2 class="text-capitalize" data-text="skills"></h2>
+                        <h3 class="text-capitalize" data-text="computer-science"></h3>
                         <div class="text-center">
                             <object data="images/skill.svg" type="image/svg+xml" id="object-skill" width="500">
                                 <div id="div-svg-fallback">
-                                    <a href="#" id="skill-svg-php">PHP</a>
-                                    <a href="#" id="skill-svg-js">JavaScript</a>
-                                    <a href="#" id="skill-svg-angularjs">Angularjs</a>
-                                    <a href="#" id="skill-svg-html5">HTML5</a>
-                                    <a href="#" id="skill-svg-nodejs">Node.js</a>
-                                    <a href="#" id="skill-svg-python">Python</a>
-                                    <a href="#" id="skill-svg-css3">CSS3</a>
-                                    <a href="#" id="skill-svg-jquery">jQuery</a>
-                                    <a href="#" id="skill-svg-vbnet">VB.net</a>
-                                    <a href="#" id="skill-svg-bootstrap">Bootstrap</a>
-                                    <a href="#" id="skill-svg-mysql">MySQL</a>
-                                    <a href="#" id="skill-svg-linux">GNU / Linux</a>
-                                    <a href="#" id="skill-svg-win">Windows</a>
-                                    <a href="#" id="skill-svg-oracle">Oracle Database</a>
-                                    <a href="#" id="skill-svg-mongo">MongoDB</a>
-                                    <a href="#" id="skill-svg-loopback">LoopBack</a>
-                                    <a href="#" id="skill-svg-java">Java</a>
-                                    <a href="#" id="skill-svg-uml">UML</a>
+                                    <a href="#skill-svg-php" id="skill-svg-php">PHP</a>
+                                    <a href="#skill-svg-js" id="skill-svg-js">JavaScript</a>
+                                    <a href="#skill-svg-angularjs" id="skill-svg-angularjs">Angularjs</a>
+                                    <a href="#skill-svg-html5" id="skill-svg-html5">HTML5</a>
+                                    <a href="#skill-svg-nodejs" id="skill-svg-nodejs">Node.js</a>
+                                    <a href="#skill-svg-python" id="skill-svg-python">Python</a>
+                                    <a href="#skill-svg-css3" id="skill-svg-css3">CSS3</a>
+                                    <a href="#skill-svg-jquery" id="skill-svg-jquery">jQuery</a>
+                                    <a href="#skill-svg-vbnet" id="skill-svg-vbnet">VB.net</a>
+                                    <a href="#skill-svg-bootstrap" id="skill-svg-bootstrap">Bootstrap</a>
+                                    <a href="#skill-svg-mysql" id="skill-svg-mysql">MySQL</a>
+                                    <a href="#skill-svg-linux" id="skill-svg-linux">GNU / Linux</a>
+                                    <a href="#skill-svg-win" id="skill-svg-win">Windows</a>
+                                    <a href="#skill-svg-oracle" id="skill-svg-oracle">Oracle Database</a>
+                                    <a href="#skill-svg-mongo" id="skill-svg-mongo">MongoDB</a>
+                                    <a href="#skill-svg-loopback" id="skill-svg-loopback">LoopBack</a>
+                                    <a href="#skill-svg-java" id="skill-svg-java">Java</a>
+                                    <a href="#skill-svg-uml" id="skill-svg-uml">UML</a>
                                 </div>
                             </object>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <h3 data-text="languages"></h3>
+                                <h3 class="text-capitalize" data-text="languages"></h3>
                                 <div id="div-parent-languages"></div>
                             </div>
                             <div id="div-various" class="col-md-6">
-                                <h3 data-text="various"></h3>
+                                <h3 class="text-capitalize" data-text="various"></h3>
                                 <div id="div-sub-various"></div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <h2 data-text="education"></h2>
+                        <h2 class="text-capitalize" data-text="education"></h2>
                         <ul id="ul-education" class="list-group"></ul>
                     </div>
                     <div id="div-interest">
-                        <h2 data-text="hobbies"></h2>
+                        <h2 class="text-capitalize" data-text="hobbies"></h2>
                         <ul id="ul-interest" class="list-group"></ul>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container text-center text-muted">
+                <i class="fa code-solid"></i>
+                <span data-text="with">with</span>
+                <i class="fa heart-solid" style="color: rgb(87, 76, 79);"></i>
+                <span data-text="by-dev-using"></span>
+                <a href="https://getbootstrap.com/" title="Bootstrap" style="color: rgb(86, 61, 124);">
+                    <i class="br bootstrap-solid"></i>
+                </a>
+                <span data-text="and">and</span>
+                <a href="https://fontawesome.com/" title="Font Awesome">
+                    <i class="fa font-awesome-brands"></i>
+                </a>
+            </div>
+        </footer>
         <figure id="figure-printable" class="d-none d-print-block">
             <img id="img-print" src="" alt="">
         </figure>

@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {
+.text-capitalize {
     text-transform: capitalize;
 }
 
@@ -50,7 +50,27 @@ h2 {
 }
 
 #div-personal span, select {
-    margin-left: 1em;
+    margin-left: 16px;
+}
+
+#div-personal a:hover {
+    cursor: pointer;
+}
+
+#div-personal svg {
+    width: 28px;
+}
+
+#a-github {
+    color: #333333
+}
+
+#a-email {
+    color: #0051ff
+}
+
+#a-linkedin {
+    color: #0077B5
 }
 
 #object-skill {
@@ -86,6 +106,10 @@ h2 {
     margin-left: 1em;
 }
 
+.div-languages svg {
+    width: 32px;
+}
+
 #div-diverse p {
     margin-left: 2em;
 }
@@ -102,4 +126,21 @@ h2 {
 
 #figure-printable {
     display: none;
+}
+
+footer, .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(248, 248, 243, 0.4);
+}
+
+footer > .container svg, .footer > .container svg {
+    width: 1rem;
+}
+
+footer a:hover, .footer a:hover {
+    text-decoration: none;
 }

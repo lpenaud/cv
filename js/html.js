@@ -56,14 +56,14 @@ const createListGroupItemProExp = function ({
   return li;
 }
 
-const createDivLanguage = function (levels, skill) {
+const createDivLanguage = function (levels, skill, icon = { solid: '', regular: '' }) {
   const div = document.createElement('DIV');
   const img = document.createElement('IMG');
   const span = document.createElement('SPAN');
 
   setClassList(div, ['div-languages']);
   div.appendChild(img);
-  div.appendChild(span)
+  div.appendChild(span);
 
   img.src = skill.image;
   img.alt = skill.language;
@@ -73,9 +73,13 @@ const createDivLanguage = function (levels, skill) {
     const italic = document.createElement('I');
     italic.classList.add('fa');
     if (i === skill.level) span.title = capitalize(levels[i]);
-    if (i <= skill.level) italic.classList.add('fa-star');
-    else italic.classList.add('fa-star-o');
-    italic.classList.add('fa-2x');
+    if (i > skill.level) {
+      italic.innerHTML = icon.regular;
+      italic.classList.add('star-regular');
+    } else {
+      italic.innerHTML = icon.solid;
+      italic.classList.add('star-solid')
+    }
     span.appendChild(italic);
   }
 
@@ -163,3 +167,28 @@ const removeAllChildren = function (DOMElement) {
     DOMElement.removeChild(DOMElement.firstChild);
   }
 }
+
+const getIcons = function () {
+  const iconFolder = { 
+    br: 'images/brands/',
+    fa: 'images/fontawesome/' 
+  };
+  const iBrIcons = Array.of(...document.querySelectorAll('i.br'));
+  const iFaIcons = Array.of(...document.querySelectorAll('i.fa'));
+  const italics = iBrIcons
+    .map(i => ({
+      i,
+      url: iconFolder.br + i.classList.item(1) + '.svg'
+    }))
+    .concat(...iFaIcons.map(i => ({
+      i,
+      url: iconFolder.fa + i.classList.item(1) + '.svg'
+    })));
+  
+  Promise.all(italics.map(({ url }) => ajaxGetPromise(url))).then((icons) => {
+    let i = 0;
+    for (i; i < icons.length; i++) {
+      italics[i].i.innerHTML = icons[i];
+    }
+  })
+};
