@@ -201,6 +201,8 @@ const translatePrint = function (language) {
 const translateAll = function (language) {
   return new Promise((resolve) => {
     const colCenterDivs = document.querySelectorAll('#div-col-center > div')
+    const footer = document.querySelector('footer');
+    footer.style.display = 'none';
     for (let i = 0; i < colCenterDivs.length; i++) {
       const div = colCenterDivs[i];
       div.style.display = div.id === 'div-spiner'
@@ -220,6 +222,7 @@ const translateAll = function (language) {
           ? 'none'
           : 'inherit';
       }
+      footer.style.display = 'inherit';
       resolve(language);
     })
   });
