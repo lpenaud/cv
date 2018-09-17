@@ -92,6 +92,14 @@
     ]
   },
   "education": [
+	{
+      "title": "3rd degree - Computer Science",
+      "dates": {
+        "start": 2018,
+        "end": "today"
+      },
+      "description": "Third year of computer science degree in design and applications development."
+    },
     {
       "title": "BTS - SIO",
       "dates": {

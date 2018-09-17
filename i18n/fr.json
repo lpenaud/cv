@@ -92,19 +92,27 @@
     ]
   },
   "education": [
+	{
+      "title": "L3 - Informatique (CDA)",
+      "dates": {
+        "start": 2018,
+        "end": "aujourd'hui"
+      },
+      "description": "Licence mention informatique 3e année parcours CDA (Conception et Développement d'Applications)."
+    },
     {
       "title": "BTS - SIO",
       "dates": {
-        "start": "2016",
-        "end": "2018"
+        "start": 2016,
+        "end": 2018
       },
       "description": "BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), spécialité SLAM (Solutions Logicielles et Applications Métier) au lycée Charles de Foucault à Brest."
     },
     {
       "title": "STI2D",
       "dates": {
-        "start": "2014",
-        "end": "2016"
+        "start": 2014,
+        "end": 2016
       },
       "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20."
     }
