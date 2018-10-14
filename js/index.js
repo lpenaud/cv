@@ -1,6 +1,6 @@
 (function () {
   const bornDate = new Date(1998, 2, 23);
-  const dateDiff = Date.now() - bornDate.getTime();
+  const dateDiff = new Date(Date.now() - bornDate.getTime());
 
   getIcons()
   translateAll(getLanguage()).then(language => {
@@ -8,18 +8,22 @@
     const optionLanguages = availableLanguages.filter(lang => lang.value !== language);
     optionLanguages.push(availableLanguages.find(lang => lang.value === language));
     for (let i = optionLanguages.length - 1; i > -1 ; i--) {
-      const opt = document.createElement('OPTION'); //optionLanguages[i]
+      const opt = document.createElement('OPTION');
       opt.value = optionLanguages[i].value;
       opt.textContent = optionLanguages[i].text;
       selectLanguages.appendChild(opt);
     }
 
     selectLanguages.addEventListener('change', evt => {
-      translateAll(evt.target.value);
+      const scrollX = window.scrollX;
+      const scrollY = window.scrollY;
+      translateAll(evt.target.value).then(() => {
+        window.scroll(scrollX, scrollY);
+      });
     });
   }).catch((err) => {
-    console.error(err)
+    console.error(err);
   });
 
-  document.querySelector('#span-years-old').textContent = (new Date(dateDiff)).getUTCFullYear() - 1970;
+  document.querySelector('#span-years-old').textContent = dateDiff.getUTCFullYear() - 1970;
 })()
