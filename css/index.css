@@ -73,20 +73,23 @@ h2 {
     color: #0077B5
 }
 
+#a-website {
+    display: none;
+    color: blue;
+}
+
 #object-skill {
     margin-top: 5px;
     margin-bottom: 20px;
+    width: 600px;
 }
 
-#div-svg-fallback {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+#object-skill img {
+    width: 600px;
 }
 
-#div-svg-fallback a {
-    display: block;
-    margin: 0.5em 2em 0.5em 2em;
+#img-skill {
+    display: none;
 }
 
 .div-languages {
@@ -122,10 +125,6 @@ h2 {
 #div-interest li {
     border: none;
     max-width: 600px;
-}
-
-#figure-printable {
-    display: none;
 }
 
 @-ms-keyframes spin {

@@ -10,18 +10,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="css/index.css" media="screen">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
         <script src="js/html.js"></script>
         <script src="js/promise-ajax.js"></script>
         <script src="js/i18n.js"></script>
     </head>
     <body>
-        <div class="container-fluid d-print-none">
+        <div class="container-fluid">
             <div class="row">
                 <div id="div-col-left" class="col-md-3 text-center">
                     <div>
                         <div>
-                            <img src="images/GrandCouleurProtrait.jpg" alt="" class="rounded" width="200">
+                            <img src="images/GrandCouleurPortrait.jpg" alt="" class="rounded" width="200">
                         </div>
                         <div>
                             <p id="p-name">
@@ -41,13 +42,17 @@
                                     <i class="fa linkedin-brands"></i>
                                     <span>Loïc Penaud</span>
                                 </a>
-                                <a id="a-print" class="list-group-item list-group-item-action" href="index.pdf" target="_blank">
+                                <a id="a-print" class="list-group-item list-group-item-action">
                                     <i class="fa print-solid"></i>
                                     <span style="text-transform: capitalize" data-text="print"></span>
                                 </a>
                                 <a id="a-language" class="list-group-item list-group-item-action">
                                     <i class="fa language-solid"></i>
                                     <select id="select-languages" class="selectpicker"></select>
+                                </a>
+                                <a id="a-website" class="list-group-item list-group-item-action" href="#">
+                                    <i class="fa user-solid"></i>
+                                    <span>#</span>
                                 </a>
                             </div>
                         </div>
@@ -66,9 +71,10 @@
                         <h2 class="text-capitalize" data-text="skills"></h2>
                         <h3 class="text-capitalize" data-text="computer-science"></h3>
                         <div class="text-center">
-                            <object data="images/skill.svg" type="image/svg+xml" id="object-skill" width="600">
-                                <img src="images/skill.svg.png" width="600">
+                            <object data="images/skill.svg" type="image/svg+xml" id="object-skill">
+                                <img src="images/skill-600.png" >
                             </object>
+                            <img id="img-skill" src="images/skill-600.png">
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -92,24 +98,23 @@
                 </div>
             </div>
         </div>
+
         <footer class="footer">
             <div class="container text-center text-muted d-print-none">
                 <i class="fa code-solid"></i>
-                <span data-text="with">with</span>
+                <span data-text="with"></span>
                 <i class="fa heart-solid" style="color: rgb(87, 76, 79);"></i>
                 <span data-text="by-dev-using"></span>
                 <a href="https://getbootstrap.com/" title="Bootstrap" style="color: rgb(86, 61, 124);">
                     <i class="br bootstrap-solid"></i>
                 </a>
-                <span data-text="and">and</span>
+                <span data-text="and"></span>
                 <a href="https://fontawesome.com/" title="Font Awesome">
                     <i class="fa font-awesome-brands"></i>
                 </a>
             </div>
         </footer>
-        <figure id="figure-printable" class="d-none d-print-block">
-            <img id="img-print" src="" alt="">
-        </figure>
+
         <script src="js/index.js"></script>
     </body>
 </html>

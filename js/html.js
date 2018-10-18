@@ -168,11 +168,7 @@ const removeAllChildren = function (DOMElement) {
   }
 }
 
-const getIcons = function () {
-  const iconFolder = { 
-    br: 'images/brands/',
-    fa: 'images/fontawesome/' 
-  };
+const getIcons = function (iconFolder) {
   const iBrIcons = Array.of(...document.querySelectorAll('i.br'));
   const iFaIcons = Array.of(...document.querySelectorAll('i.fa'));
   const italics = iBrIcons
@@ -190,5 +186,5 @@ const getIcons = function () {
     for (i; i < icons.length; i++) {
       italics[i].i.innerHTML = icons[i];
     }
-  })
+  });
 };

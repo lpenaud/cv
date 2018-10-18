@@ -185,19 +185,6 @@ const translateVarious = function (language) {
   })
 }
 
-const translatePrint = function (language) {
-  return new Promise(resolve => {
-    getTranslation(language)
-      .then(translation => {
-        const a = document.querySelector('#a-print');
-        const img = document.querySelector('#img-print');
-        a.href = `documents/${translation.language}.pdf`;
-        img.src = `images/index/${translation.language}.png`;
-        resolve();
-      })
-  })
-}
-
 const translateAll = function (language) {
   return new Promise((resolve) => {
     const colCenterDivs = document.querySelectorAll('#div-col-center > div')
@@ -215,7 +202,6 @@ const translateAll = function (language) {
       translateEducation(language);
       translateInterest(language);
       translateVarious(language);
-      translatePrint(language);
       for (let i = 0; i < colCenterDivs.length; i++) {
         const div = colCenterDivs[i];
         div.style.display = div.id === 'div-spiner'

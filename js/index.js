@@ -2,7 +2,10 @@
   const bornDate = new Date(1998, 2, 23);
   const dateDiff = new Date(Date.now() - bornDate.getTime());
 
-  getIcons()
+  getIcons({
+    br: 'images/brands/',
+    fa: 'images/fontawesome/'
+  });
   translateAll(getLanguage()).then(language => {
     const selectLanguages = document.querySelector('#select-languages');
     const optionLanguages = availableLanguages.filter(lang => lang.value !== language);
@@ -23,6 +26,13 @@
     });
   }).catch((err) => {
     console.error(err);
+  });
+
+  document.querySelector('#a-website').href = window.location.href
+  document.querySelector('#a-website > span').textContent = window.location.hostname + window.location.pathname
+
+  document.querySelector('#a-print').addEventListener('click', () => {
+    window.print();
   });
 
   document.querySelector('#span-years-old').textContent = dateDiff.getUTCFullYear() - 1970;
