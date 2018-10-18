@@ -10,13 +10,15 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="231mm"
+   width="252mm"
    height="147mm"
-   viewBox="0 0 818.504 520.86582"
+   viewBox="0 0 892.91349 520.86582"
    id="skill-svg"
    version="1.1"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="skill.svg">
+   sodipodi:docname="skill.svg"
+   inkscape:export-xdpi="91.720001"
+   inkscape:export-ydpi="91.720001">
   <defs
      id="defs4">
     <linearGradient
@@ -187,11 +189,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="91.61629"
-     inkscape:cy="276.46"
+     inkscape:zoom="1.1904806"
+     inkscape:cx="401.75624"
+     inkscape:cy="302.03731"
      inkscape:document-units="px"
-     inkscape:current-layer="skill-svg-c"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:snap-grids="true"
      inkscape:snap-intersection-paths="true"
@@ -201,7 +203,8 @@
      inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
-     inkscape:snap-global="false">
+     inkscape:snap-global="false"
+     showguides="false">
     <inkscape:grid
        type="xygrid"
        id="grid3346" />
@@ -370,23 +373,23 @@
              id="g3013">
             <polygon
                style="fill:#264de4"
-               points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512 "
+               points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
                id="polygon2989" />
             <polygon
                style="fill:#2965f1"
-               points="404.27,130.894 256,130.894 256,480.523 376.03,447.246 "
+               points="256,480.523 376.03,447.246 404.27,130.894 256,130.894 "
                id="polygon2991" />
             <polygon
                style="fill:#ebebeb"
-               points="154.38,313.627 256,313.627 256,268.217 150.31,268.217 "
+               points="256,268.217 150.31,268.217 154.38,313.627 256,313.627 "
                id="polygon2993" />
             <polygon
                style="fill:#ebebeb"
-               points="146.26,221.716 256,221.716 256,176.305 255.843,176.305 142.132,176.305 "
+               points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 "
                id="polygon2995" />
             <polygon
                style="fill:#ebebeb"
-               points="177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 "
+               points="201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 256,433.399 256,386.153 255.801,386.206 205.227,372.55 "
                id="polygon2997" />
             <path
                inkscape:connector-curvature="0"
@@ -402,7 +405,7 @@
                id="path3003" />
             <polygon
                style="fill:#ffffff"
-               points="369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 "
+               points="255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 "
                id="polygon3005" />
           </g>
         </g>
@@ -843,15 +846,15 @@
            id="g48"
            transform="matrix(0.78020778,0,0,0.78020778,521.30315,68.999067)">
           <polygon
-             points="166.462,29.46 83.243,0.875 0.554,29.975 13.621,138.311 83.331,176.625 153.4,137.792 "
+             points="0.554,29.975 13.621,138.311 83.331,176.625 153.4,137.792 166.462,29.46 83.243,0.875 "
              id="polygon50"
              style="fill:#b3b3b3" />
           <polygon
-             points="83.05,10.089 83.05,167.471 146.041,132.609 158.214,35.721 "
+             points="146.041,132.609 158.214,35.721 83.05,10.089 83.05,167.471 "
              id="polygon52"
              style="fill:#a6120d" />
           <polygon
-             points="21.03,133.072 83.049,167.471 83.049,10.086 9.833,36.183 "
+             points="83.049,10.086 9.833,36.183 21.03,133.072 83.049,167.471 "
              id="polygon54"
              style="fill:#dd1b16" />
           <path
@@ -860,7 +863,7 @@
              id="path56"
              style="fill:#f2f2f2" />
           <polygon
-             points="107.062,103.546 118.285,129.543 136.529,129.881 83.049,15.804 83.186,52.271 100.454,88.396 83.088,88.396 83.049,103.523 "
+             points="136.529,129.881 83.049,15.804 83.186,52.271 100.454,88.396 83.088,88.396 83.049,103.523 107.062,103.546 118.285,129.543 "
              id="polygon58"
              style="fill:#b3b3b3" />
         </g>
@@ -868,7 +871,7 @@
     </g>
     <g
        id="skill-svg-bootstrap"
-       transform="matrix(0.80887655,0,0,0.80887655,159.69281,502.78185)">
+       transform="matrix(0.80887655,0,0,0.80887655,157.18701,500.97211)">
       <title
          id="title4698">Bootstrap</title>
       <path
@@ -897,7 +900,7 @@
     </g>
     <g
        id="skill-svg-java"
-       transform="matrix(0.80887655,0,0,0.80887655,161.19281,504.19858)">
+       transform="matrix(0.80887655,0,0,0.80887655,159.81469,503.80483)">
       <title
          id="title4724">Java</title>
       <path
@@ -5387,7 +5390,7 @@
     </g>
     <g
        id="skill-svg-mongo"
-       transform="translate(30.018715,488.25347)">
+       transform="translate(27.090336,486.20607)">
       <title
          id="title14264">MongoDB</title>
       <path
@@ -5442,7 +5445,7 @@
     </g>
     <g
        id="skill-svg-win"
-       transform="translate(76.854502,435.33925)">
+       transform="translate(76.412984,435.15636)">
       <title
          id="title14262">Windows</title>
       <path
@@ -5533,6 +5536,33 @@
            id="path3"
            inkscape:connector-curvature="0"
            style="fill:#a8b9cc;stroke-width:0.26613745" />
+      </g>
+    </g>
+    <g
+       id="skill-svg-git"
+       transform="translate(-0.08286405,0.33145616)">
+      <title
+         id="title3717">Git</title>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:connector-curvature="0"
+         id="path3617-7-9-7-3-5-3-6-7-5"
+         d="m 793.69936,724.30312 -45.68606,45.68605 v 45.68606 l 45.68606,45.68605 h 45.68604 l 45.68604,-45.68605 V 769.98917 L 839.3854,724.30312 Z"
+         style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:9.13720989px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g3670"
+         inkscape:label="ink_ext_XXXXXX"
+         transform="matrix(1.2762169,0,0,-1.2762169,759.29534,850.82674)">
+        <g
+           id="g3672"
+           transform="scale(0.1)">
+          <path
+             d="M 901.543,500.352 500.352,901.527 c -23.094,23.11 -60.567,23.11 -83.692,0 L 333.359,818.211 439.031,712.535 c 24.563,8.293 52.727,2.727 72.297,-16.847 19.688,-19.696 25.203,-48.102 16.699,-72.75 L 629.883,521.094 c 24.648,8.496 53.066,3.004 72.754,-16.711 27.5,-27.492 27.5,-72.059 0,-99.574 -27.52,-27.516 -72.078,-27.516 -99.61,0 -20.683,20.703 -25.8,51.097 -15.312,76.582 l -95,94.992 V 326.414 c 6.699,-3.32 13.027,-7.742 18.613,-13.312 27.5,-27.497 27.5,-72.059 0,-99.598 -27.5,-27.488 -72.09,-27.488 -99.57,0 -27.5,27.539 -27.5,72.101 0,99.598 6.797,6.789 14.668,11.925 23.066,15.363 v 252.281 c -8.398,3.438 -16.25,8.531 -23.066,15.367 -20.828,20.821 -25.84,51.395 -15.156,76.977 L 292.422,777.285 17.3242,502.211 c -23.10545,-23.129 -23.10545,-60.602 0,-83.711 L 418.535,17.3242 c 23.098,-23.10545 60.559,-23.10545 83.692,0 L 901.543,416.641 c 23.113,23.113 23.113,60.605 0,83.711"
+             style="fill:#f03c2e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path3674-6"
+             inkscape:connector-curvature="0" />
+        </g>
       </g>
     </g>
   </g>
