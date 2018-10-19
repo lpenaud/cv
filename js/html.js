@@ -168,23 +168,27 @@ const removeAllChildren = function (DOMElement) {
   }
 }
 
-const getIcons = function (iconFolder) {
-  const iBrIcons = Array.of(...document.querySelectorAll('i.br'));
-  const iFaIcons = Array.of(...document.querySelectorAll('i.fa'));
-  const italics = iBrIcons
-    .map(i => ({
-      i,
-      url: iconFolder.br + i.classList.item(1) + '.svg'
-    }))
-    .concat(...iFaIcons.map(i => ({
-      i,
-      url: iconFolder.fa + i.classList.item(1) + '.svg'
-    })));
-  
-  Promise.all(italics.map(({ url }) => ajaxGetPromise(url))).then((icons) => {
-    let i = 0;
-    for (i; i < icons.length; i++) {
-      italics[i].i.innerHTML = icons[i];
+const getIcons = function (paths) {
+  const types = Object.keys(paths);
+  let nodes = [];
+  let urls = [];
+
+  for (let i = 0; i < types.length; i++) {
+    nodes = nodes.concat(...document.querySelectorAll(`i.${types[i]}`));
+  }
+
+  for (let i = 0; i < nodes.length; i++) {
+    const node = nodes[i];
+    if (urls.indexOf(node) === -1) {
+      urls.push(`${paths[node.classList.item(0)] + node.classList.item(1)}.svg`)
     }
-  });
-};
+  }
+
+  Promise.all(urls.map(url => ajaxGetPromise(url))).then((icons) => {
+    for (let i = 0; i < nodes.length; i++) {
+      const node = nodes[i];
+      const index = urls.indexOf(`${paths[node.classList.item(0)] + node.classList.item(1)}.svg`);
+      node.innerHTML = icons[index];
+    }
+  })
+}
