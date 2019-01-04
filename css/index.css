@@ -73,6 +73,10 @@ h2 {
     color: #0077B5
 }
 
+#a-mastodon {
+    color: #2b90d9;
+}
+
 #a-website {
     display: none;
     color: blue;
