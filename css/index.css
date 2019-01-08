@@ -1,5 +1,22 @@
-.text-capitalize {
-    text-transform: capitalize;
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 h3 {
@@ -15,38 +32,25 @@ h2 {
     margin-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-    #div-col-left>div {
-        position: fixed;
-    }
+.container-internship {
+    margin-top: 62.8px;
 }
 
-@media (min-width: 1200px) {
-    #div-col-left {
-        padding-left: 4em;
-        padding-right: 4em;
-    }
+#div-col-left > div {
+    position: fixed;
+}
 
-    #div-col-center {
-        padding-right: 4em;
-    }
-
-    #div-interest li {
-        min-width: 300px;
-    }
-
-    h2 {
-        margin-top: 0.4rem;
-    }
-
-    #h2-professional-experience {
-        margin-top: auto;
-    }
+#portrait {
+    width: 150px;
 }
 
 #p-name {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+#div-personal svg {
+    width: 1.5rem;
 }
 
 #div-personal span, select {
@@ -55,10 +59,6 @@ h2 {
 
 #div-personal a:hover {
     cursor: pointer;
-}
-
-#div-personal svg {
-    width: 28px;
 }
 
 #a-github {
@@ -121,7 +121,7 @@ h2 {
     margin-left: 2em;
 }
 
-#div-interest>ul {
+#div-interest > ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -129,27 +129,6 @@ h2 {
 #div-interest li {
     border: none;
     max-width: 600px;
-}
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
 }
 
 #div-spiner > img {
@@ -186,4 +165,70 @@ footer > .container svg, .footer > .container svg {
 
 footer a:hover, .footer a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 1281px) {
+    #div-col-left > div {
+        margin-left: 3rem;
+    }
+
+    #portrait {
+        width: 200px;
+    }
+
+    #div-interest li {
+        min-width: 300px;
+    }
+    
+    h2 {
+        margin-top: 0.4rem;
+    }
+    
+    #h2-professional-experience {
+        margin-top: auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #div-col-left > div {
+        margin-left: 1rem;
+    }
+
+    #div-personal {
+        font-size: 0.9rem;
+    }
+
+    #div-personal svg {
+        width: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #portrait {
+        width: 150px;
+    }
+
+    #div-personal svg {
+        width: 1.5rem;
+    }
+
+    #div-personal i::after {
+        content: '\a';
+        white-space: pre;
+    }
+
+    #div-personal > .list-group-item {
+        padding: 0.2rem 0;
+        text-align: center;
+    }
+
+    #div-personal span, select {
+        margin: 0 8px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #div-col-left > div {
+        position: relative;
+    }
 }
