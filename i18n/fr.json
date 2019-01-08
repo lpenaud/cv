@@ -15,6 +15,19 @@
     "by-dev-using": "par Loïc Penaud en utilisant",
     "and": "et"
   },
+  "intership": {
+    "find": "Je recherche un stage du {} au {}",
+    "start": {
+      "day": 15,
+      "month": 4,
+      "year": 2019
+    },
+    "end": {
+      "day": 7,
+      "month": 6,
+      "year": 2019
+    }
+  },
   "proExp": [
     {
       "title": "Shakabay (Brest)",

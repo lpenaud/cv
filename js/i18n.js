@@ -185,6 +185,30 @@ const translateVarious = function (language) {
   })
 }
 
+const translateIntership = function (language) {
+  const target = document.querySelector('#internship > h2');
+  getTranslation(language)
+    .then(translation => {
+      const { intership } = translation;
+      let { start, end } = intership;
+      const sentence = intership.find.split('{}');
+      if (start !== null || intership.end !== null) {
+        const options = {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+        };
+        start = new Date(start.year, start.month - 1, start.day);
+        end = new Date(end.year, end.month - 1, end.day);
+        target.textContent = sentence[0] 
+          + start.toLocaleDateString(language, options)
+          + sentence[1]
+          + end.toLocaleDateString(language, options);
+        target.parentElement.classList.remove('d-none');
+      }
+    })
+}
+
 const translateAll = function (language) {
   return new Promise((resolve) => {
     const colCenterDivs = document.querySelectorAll('#div-col-center > div')
@@ -202,6 +226,7 @@ const translateAll = function (language) {
       translateEducation(language);
       translateInterest(language);
       translateVarious(language);
+      translateIntership(language);
       for (let i = 0; i < colCenterDivs.length; i++) {
         const div = colCenterDivs[i];
         div.style.display = div.id === 'div-spiner'
