@@ -205,6 +205,7 @@ const translateIntership = function (language) {
           + sentence[1]
           + end.toLocaleDateString(language, options);
         target.parentElement.classList.remove('d-none');
+        document.querySelector('.container-fluid').classList.add('container-internship');
       }
     })
 }

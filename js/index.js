@@ -35,7 +35,5 @@
     window.print();
   });
 
-  document.querySelector('.container-fluid').classList.add('container-internship');
-
   document.querySelector('#span-years-old').textContent = dateDiff.getUTCFullYear() - 1970;
 })()
