@@ -31,49 +31,43 @@
   "proExp": [
     {
       "title": "Shakabay (Brest)",
-      "dates": {
-        "start": {
-          "day": 15,
-          "month": 1,
-          "year": 2018
-        },
-        "end": {
-          "day": 2,
-          "mouth": 3,
-          "year": 2018
-        }
+      "start": {
+        "day": 15,
+        "month": 1,
+        "year": 2018
+      },
+      "end": {
+        "day": 2,
+        "month": 3,
+        "year": 2018
       },
       "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
     },
     {
       "title": "Zip (Guipavas)",
-      "dates": {
-        "start": {
-          "day": 3,
-          "month": 7,
-          "year": 2017
-        },
-        "end": {
-          "day": 18,
-          "mouth": 8,
-          "year": 2017
-        }
+      "start": {
+        "day": 3,
+        "month": 7,
+        "year": 2017
+      },
+      "end": {
+        "day": 18,
+        "month": 8,
+        "year": 2017
       },
       "description": "Emploi saisonnier, pendant lequel j'ai travaillé sur l'API d'Air Affaires sous nodejs avec le framework loopback (v2). De plus, j'ai contribué au front avec angularjs."
     },
     {
       "title": "Zip (Guipavas)",
-      "dates": {
-        "start": {
-          "day": 29,
-          "month": 5,
-          "year": 2017
-        },
-        "end": {
-          "day": 23,
-          "mouth": 6,
-          "year": 2017
-        }
+      "start": {
+        "day": 29,
+        "month": 5,
+        "year": 2017
+      },
+      "end": {
+        "day": 23,
+        "month": 6,
+        "year": 2017
       },
       "description": "Stage de première année de BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations)."
     }
@@ -107,30 +101,24 @@
   "education": [
 	{
       "title": "L3 - Informatique (CDA)",
-      "dates": {
-        "start": 2018,
-        "end": "aujourd'hui"
-      },
+      "start": 2018,
+      "end": "aujourd'hui",
       "description": "Licence mention informatique 3e année parcours CDA (Conception et Développement d'Applications).",
       "certificate": null
     },
     {
       "title": "BTS - SIO",
-      "dates": {
-        "start": 2016,
-        "end": 2018
-      },
+      "start": 2016,
+      "end": 2018,
       "description": "BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), spécialité SLAM (Solutions Logicielles et Applications Métier) au lycée Charles de Foucault à Brest.",
-      "certificate": "images/certificate/bts-sio.pdf"
+      "certificate": "images/certificates/bts-sio.pdf"
     },
     {
       "title": "STI2D",
-      "dates": {
-        "start": 2014,
-        "end": 2016
-      },
+      "start": 2014,
+      "end": 2016,
       "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20.",
-      "certificate": null
+      "certificate": "images/certificates/sti2d.pdf"
     }
   ],
   "interest": [

@@ -31,49 +31,43 @@
   "proExp": [
     {
       "title": "Shakabay (Brest Area, France)",
-      "dates": {
-        "start": {
-          "day": 15,
-          "month": 1,
-          "year": 2018
-        },
-        "end": {
-          "day": 2,
-          "mouth": 3,
-          "year": 2018
-        }
+      "start": {
+        "day": 15,
+        "month": 1,
+        "year": 2018
+      },
+      "end": {
+        "day": 2,
+        "month": 3,
+        "year": 2018
       },
       "description": "Internship for my second graduate student year. I worked on the Shakabay API (back-end) in nodejs with koa-router."
     },
     {
       "title": "Zip (Guipavas, France)",
-      "dates": {
-        "start": {
-          "day": 3,
-          "month": 7,
-          "year": 2017
-        },
-        "end": {
-          "day": 18,
-          "mouth": 8,
-          "year": 2017
-        }
+      "start": {
+        "day": 3,
+        "month": 7,
+        "year": 2017
+      },
+      "end": {
+        "day": 18,
+        "month": 8,
+        "year": 2017
       },
       "description": "Holiday job, where I worked on Air Affaires API with loopback (v2) a nodejs framework, in addition I contributed to the front with angularjs."
     },
     {
       "title": "Zip (Guipavas, France)",
-      "dates": {
-        "start": {
-          "day": 29,
-          "month": 5,
-          "year": 2017
-        },
-        "end": {
-          "day": 23,
-          "mouth": 6,
-          "year": 2017
-        }
+      "start": {
+        "day": 29,
+        "month": 5,
+        "year": 2017
+      },
+      "end": {
+        "day": 23,
+        "month": 6,
+        "year": 2017
       },
       "description": "Work experience of the first graduate student year."
     }
@@ -107,30 +101,24 @@
   "education": [
     {
       "title": "3rd degree - Computer Science",
-      "dates": {
-        "start": 2018,
-        "end": "today"
-      },
-      "description": "Third year of computer science degree in design and applications development."
+      "start": 2018,
+      "end": "today",
+      "description": "Third year of computer science degree in design and applications development.",
       "certificate": null
     },
     {
       "title": "BTS - SIO",
-      "dates": {
-        "start": "2016",
-        "end": "2018"
-      },
+      "start": "2016",
+      "end": "2018",
       "description": "BTS (Higher Technician Certificate) SIO (IT Services to Organizations), specialty SLAM (Software Solutions and Business Applications) at the Lycée Charles de Foucault in Brest.",
-      "certificate": "images/certificate/bts-sio.pdf"
+      "certificate": "images/certificates/bts-sio.pdf"
     },
     {
       "title": "STI2D",
-      "dates": {
-        "start": "2014",
-        "end": "2016"
-      },
+      "start": "2014",
+      "end": "2016",
       "description": "STI2D baccalaureate diploma, \"pretty good\" awarded.",
-      "certificate": null
+      "certificate": "images/certificates/sti2d.pdf"
     }
   ],
   "interest": [
