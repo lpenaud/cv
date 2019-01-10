@@ -89,7 +89,8 @@ const createDivLanguage = function (levels, skill, icon = { solid: '', regular: 
 const createLiEducation = function ({
   title,
   dates,
-  description
+  description,
+  certificate
 }) {
   const li = document.createElement('LI');
   const div = document.createElement('DIV');
@@ -115,7 +116,15 @@ const createLiEducation = function ({
   div.appendChild(h5Date);
 
   setClassList(h5Title, ['mb-1']);
-  h5Title.textContent = title;
+  if (certificate === null) {
+    h5Title.textContent = title;
+  } else {
+    const anchor = document.createElement('A');
+    anchor.textContent = title;
+    anchor.target = '_blank';
+    anchor.href = certificate;
+    h5Title.appendChild(anchor);
+  }
 
   h5Date.appendChild(smallDate);
   smallDate.textContent = dates.start + ' - ' + dates.end;

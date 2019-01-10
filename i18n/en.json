@@ -105,13 +105,14 @@
     ]
   },
   "education": [
-	{
+    {
       "title": "3rd degree - Computer Science",
       "dates": {
         "start": 2018,
         "end": "today"
       },
       "description": "Third year of computer science degree in design and applications development."
+      "certificate": null
     },
     {
       "title": "BTS - SIO",
@@ -119,7 +120,8 @@
         "start": "2016",
         "end": "2018"
       },
-      "description": "BTS (Higher Technician Certificate) SIO (IT Services to Organizations), specialty SLAM (Software Solutions and Business Applications) at the Lycée Charles de Foucault in Brest."
+      "description": "BTS (Higher Technician Certificate) SIO (IT Services to Organizations), specialty SLAM (Software Solutions and Business Applications) at the Lycée Charles de Foucault in Brest.",
+      "certificate": "images/certificate/bts-sio.pdf"
     },
     {
       "title": "STI2D",
@@ -127,7 +129,8 @@
         "start": "2014",
         "end": "2016"
       },
-      "description": "STI2D baccalaureate diploma, \"pretty good\" awarded."
+      "description": "STI2D baccalaureate diploma, \"pretty good\" awarded.",
+      "certificate": null
     }
   ],
   "interest": [
