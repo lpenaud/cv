@@ -17,7 +17,8 @@ const setClassList = function (element, classList) {
 
 const createListGroupItemProExp = function ({
   title,
-  dates,
+  start,
+  end,
   description,
 }) {
   const li = document.createElement('LI');
@@ -47,8 +48,7 @@ const createListGroupItemProExp = function ({
   h5Title.textContent = title;
 
   h5Date.appendChild(smallDate);
-
-  smallDate.textContent = dates.start + ' - ' + dates.end;
+  smallDate.textContent = start + ' - ' + end;
 
   p.innerHTML = description;
   setClassList(p, ['mb-1']);
@@ -88,7 +88,8 @@ const createDivLanguage = function (levels, skill, icon = { solid: '', regular: 
 
 const createLiEducation = function ({
   title,
-  dates,
+  start,
+  end,
   description,
   certificate
 }) {
@@ -127,7 +128,7 @@ const createLiEducation = function ({
   }
 
   h5Date.appendChild(smallDate);
-  smallDate.textContent = dates.start + ' - ' + dates.end;
+  smallDate.textContent = start + ' - ' + end;
 
   p.innerHTML = description;
 

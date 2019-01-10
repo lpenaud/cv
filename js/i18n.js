@@ -12,7 +12,10 @@ const availableLanguages = [
 ];
 
 const getLanguage = function () {
-  return navigator.language.split('-')[0];
+  const lang = (location.search && location.search.substring(1,5) === 'lang'
+    ? location.search.substring(6)
+    : navigator.language).substring(0, 2);
+    return lang
 };
 
 const getTranslation = function (language) {
@@ -23,22 +26,6 @@ const getTranslation = function (language) {
     if (index === -1) {
       ajaxGetJSONPromise(`i18n/${language}.json`)
         .then(translation => {
-          for (let i = 0; i < translation.proExp.length; i++) {
-            const { dates } = translation.proExp[i];
-            const { start, end } = dates;
-
-            translation.proExp[i].dates.start = (new Date(
-              start.year, 
-              start.month - 1, 
-              start.day
-            )).toLocaleDateString(language);
-  
-            translation.proExp[i].dates.end = (new Date(
-              end.year,
-              end.mouth - 1,
-              end.day
-            )).toLocaleDateString(language);
-          }
           translations.push(translation);
           resolve(translation);
         })
@@ -87,15 +74,22 @@ const translateProExp = function translateProfessionalExperience (language) {
     const ul = document.querySelector('#ul-professional-experience');
     removeAllChildren(ul);
     getTranslation(language)
-      .then(translation => {
-        const { proExp } = translation;
-        for (let i = 0; i < proExp.length; i++) {
-          ul.appendChild(createListGroupItemProExp(proExp[i])); 
+    .then(translation => {
+      const { proExp } = translation;
+      for (let i = 0; i < proExp.length; i++) {
+        const { start, end } = proExp[i];
+        if (typeof start === 'object') {
+          proExp[i].start = new Date(start.year, start.month - 1, start.day).toLocaleDateString(language);
         }
-        resolve();
-      });
-  })
-}
+        if (typeof end === 'object') {
+          proExp[i].end = new Date(end.year, end.month - 1, end.day).toLocaleDateString(language);
+        }
+        ul.appendChild(createListGroupItemProExp(proExp[i])); 
+      }
+      resolve();
+    });
+  });
+};
 
 const translateLanguage = function (language) {
   return new Promise(resolve => {
