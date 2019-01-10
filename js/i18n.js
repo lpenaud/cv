@@ -12,7 +12,11 @@ const availableLanguages = [
 ];
 
 const getLanguage = function () {
-  return navigator.language.split('-')[0];
+  const lang = (location.search && location.search.substring(1,5) === 'lang'
+    ? location.search.substring(6)
+    : navigator.language.split).substring(0, 2);
+    console.log(lang);
+    return lang
 };
 
 const getTranslation = function (language) {
@@ -21,7 +25,7 @@ const getTranslation = function (language) {
     const index = translations.findIndex(translation => translation.language === language);
 
     if (index === -1) {
-      ajaxGetJSONPromise(`i18n/${language}.json`)
+      ajaxGetJSONPromise(`${location.origin}/i18n/${language}.json`)
         .then(translation => {
           for (let i = 0; i < translation.proExp.length; i++) {
             const { dates } = translation.proExp[i];

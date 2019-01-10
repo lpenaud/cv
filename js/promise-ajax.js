@@ -26,6 +26,6 @@ const ajaxGetJSONPromise = function (url) {
   return new Promise((resolve, reject) => {
     ajaxGetPromise(url)
       .then(data => resolve(JSON.parse(data)))
-      .catch(err => reject(err));
+      .catch(reject);
   });
 };
