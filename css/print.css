@@ -62,3 +62,12 @@ small {
 #div-parent-languages img {
   width: 28px;
 }
+
+#ul-education a {
+    color: inherit;
+}
+
+#div-interest a:after {
+    content: ' (' attr(href) ')';
+}
+
