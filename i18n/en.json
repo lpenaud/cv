@@ -17,6 +17,20 @@
   },
   "proExp": [
     {
+      "title": "Les Sentinelles du Web",
+      "start": {
+        "day": 15,
+        "month": 4,
+        "year": 2019
+      },
+      "end": {
+        "day": 26,
+        "month": 6,
+        "year": 2019
+      },
+      "description": "Internship for my bachelor's deggree of computer science at UBO college. I worked on confidential projet relating to french governement open-data with Nodejs, Typscript and MongoDB."
+    },
+    {
       "title": "Shakabay (Brest Area, France)",
       "start": {
         "day": 15,
@@ -87,10 +101,10 @@
   },
   "education": [
     {
-      "title": "3rd degree - Computer Science",
+      "title": "Bachelor degree - Computer Science",
       "start": 2018,
       "end": "today",
-      "description": "Third year of computer science degree in design and applications development.",
+      "description": "Bachelor of computer science degree in design and applications development at UBO college.",
       "certificate": null
     },
     {

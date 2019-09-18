@@ -17,6 +17,34 @@
   },
   "proExp": [
     {
+      "title": "Les Sentinelles du Web",
+      "start": {
+        "day": 15,
+        "month": 4,
+        "year": 2019
+      },
+      "end": {
+        "day": 26,
+        "month": 6,
+        "year": 2019
+      },
+      "description": "Stage de licence 3 d’informatique « Parcours Conception et Développement d’Applications » (CDA) à l’Université de Bretagne Occidental (UBO), pendant lequel j’ai travaillé sur un projet confidentiel en rapport avec l’open-data de l’État français, Nodejs, Typescript et MongoDB."
+    },
+    {
+      "title": "Shakabay (Brest)",
+      "start": {
+        "day": 15,
+        "month": 1,
+        "year": 2018
+      },
+      "end": {
+        "day": 2,
+        "month": 3,
+        "year": 2018
+      },
+      "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
+    },
+    {
       "title": "Shakabay (Brest)",
       "start": {
         "day": 15,
