@@ -114,7 +114,14 @@
     ]
   },
   "education": [
-	{
+		{
+      "title": "Master - Informatique (TIIL-A)",
+      "start": 2019,
+      "end": "aujourd'hui",
+      "description": "Master mention informatique parcours TIIL-A (Technologies de l'Information et Ingénierie du Logiciel par Alternance)",
+      "certificate": null
+    },
+		{
       "title": "L3 - Informatique (CDA)",
       "start": 2018,
       "end": "aujourd'hui",
