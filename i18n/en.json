@@ -100,6 +100,13 @@
     ]
   },
   "education": [
+     {
+      "title": "Master degree - Computer Science",
+      "start": 2019,
+      "end": "today",
+      "description": "Master of computer science degree in work-linked training",
+      "certificate": null
+    },
     {
       "title": "Bachelor degree - Computer Science",
       "start": 2018,
