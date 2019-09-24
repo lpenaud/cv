@@ -1,29 +1,31 @@
 @page {
   size: auto;
-  margin: 0mm;
+  margin: 1cm;
 }
 
 body {
-  font-size: 0.8em;
-  width: 100%;
-  height: 100%;
+  font-size: 12pt;
 }
 
 h5 {
-  font-size: 0.9em;
+  font-size: 13pt;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 14pt;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 15pt;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 16pt;
+}
+
+small {
+  font-size: 10pt;
 }
 
 svg {
@@ -37,10 +39,6 @@ a, li {
 
 a {
   text-decoration: none !important;
-}
-
-small {
-  font-size: 0.9em;
 }
 
 #a-website {
@@ -67,7 +65,10 @@ small {
     color: inherit;
 }
 
+#div-interest a {
+  color: inherit;
+}
+
 #div-interest a:after {
     content: ' (' attr(href) ')';
 }
-
