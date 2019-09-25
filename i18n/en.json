@@ -15,6 +15,14 @@
     "by-dev-using": "by Loïc Penaud using",
     "and": "and"
   },
+  "intership": {
+    "find": "I looking for 3 month or more internship from {}",
+    "start": {
+      "day": 31,
+      "month": 3,
+      "year": 2019
+    }
+  },
   "proExp": [
     {
       "title": "Les Sentinelles du Web",

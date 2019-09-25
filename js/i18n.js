@@ -193,11 +193,11 @@ const translateIntership = function (language) {
           year: 'numeric',
         };
         start = new Date(start.year, start.month - 1, start.day);
-        end = new Date(end.year, end.month - 1, end.day);
-        target.textContent = sentence[0] 
-          + start.toLocaleDateString(language, options)
-          + sentence[1]
-          + end.toLocaleDateString(language, options);
+        target.textContent = sentence[0] + start.toLocaleDateString(language, options);
+        if (end) {
+          end = new Date(end.year, end.month - 1, end.day);
+          target.textContent += sentence[1] + end.toLocaleDateString(language, options);
+        }
         target.parentElement.classList.remove('d-none');
         document.querySelector('.container-fluid').classList.add('container-internship');
       }

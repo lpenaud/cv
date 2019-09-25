@@ -15,6 +15,14 @@
     "by-dev-using": "par Loïc Penaud en utilisant",
     "and": "et"
   },
+  "intership": {
+    "find": "Je recherche un stage d'une durée minimum de 3 mois à partir du {}",
+    "start": {
+      "day": 31,
+      "month": 3,
+      "year": 2019
+    }
+  },
   "proExp": [
     {
       "title": "Les Sentinelles du Web",
