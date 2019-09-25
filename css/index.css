@@ -232,3 +232,7 @@ footer a:hover, .footer a:hover {
         position: relative;
     }
 }
+
+#internship {
+    background-color: rgb(23, 162, 184, 0.8) !important;
+}
