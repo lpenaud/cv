@@ -53,20 +53,6 @@
       "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
     },
     {
-      "title": "Shakabay (Brest)",
-      "start": {
-        "day": 15,
-        "month": 1,
-        "year": 2018
-      },
-      "end": {
-        "day": 2,
-        "month": 3,
-        "year": 2018
-      },
-      "description": "Stage de deuxième année de BTS Services Informatiques aux Organisations, pendant lequel j'ai travaillé sur l'API de Shakabay en nodejs avec koa-router."
-    },
-    {
       "title": "Zip (Guipavas)",
       "start": {
         "day": 3,
