@@ -4,9 +4,9 @@
     "years-old": "ans",
     "print": "imprimer",
     "professional-experience": "expérience professionnelle",
-    "skills": "compétences",
-    "computer-science": "informatiques",
-    "languages": "langues",
+    "skills": "compétence",
+    "computer-science": "informatique",
+    "languages": "langue",
     "various": "divers",
     "education": "formation",
     "hobbies": "centre d'intérêt",
@@ -16,7 +16,7 @@
     "and": "et"
   },
   "intership": {
-    "find": "Je recherche un stage d'une durée minimum de 3 mois à partir du {}",
+    "find": "Je recherche un stage d’une durée minimum de 3 mois à partir du {}",
     "start": {
       "day": 31,
       "month": 3,
@@ -112,21 +112,21 @@
       "title": "Master - Informatique (TIIL-A)",
       "start": 2019,
       "end": "aujourd'hui",
-      "description": "Master mention informatique parcours TIIL-A (Technologies de l'Information et Ingénierie du Logiciel par Alternance)",
+      "description": "Master mention informatique parcours TIIL-A (Technologies de l'Information et Ingénierie du Logiciel par Alternance) à l'Université de Bretagne Occidentale (UBO) à Brest.",
       "certificate": null
     },
 		{
       "title": "L3 - Informatique (CDA)",
       "start": 2018,
       "end": 2019,
-      "description": "Licence mention informatique 3e année parcours CDA (Conception et Développement d'Applications).",
+      "description": "Licence mention informatique 3e année parcours CDA (Conception et Développement d'Applications) à l'UBO.",
       "certificate": null
     },
     {
       "title": "BTS - SIO",
       "start": 2016,
       "end": 2018,
-      "description": "BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), spécialité SLAM (Solutions Logicielles et Applications Métier) au lycée Charles de Foucault à Brest.",
+      "description": "BTS (Brevet de Technicien Supérieur) SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métier) au lycée Charles de Foucault à Brest.",
       "certificate": "images/certificates/bts-sio.pdf"
     },
     {
