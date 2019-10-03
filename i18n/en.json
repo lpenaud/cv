@@ -25,7 +25,7 @@
   },
   "proExp": [
     {
-      "title": "Les Sentinelles du Web",
+      "title": "Les Sentinelles du Web (Brest, France)",
       "start": {
         "day": 15,
         "month": 4,
@@ -39,7 +39,7 @@
       "description": "Internship for my bachelor's deggree of computer science at UBO college. I worked on confidential projet relating to french governement open-data with Nodejs, Typscript and MongoDB."
     },
     {
-      "title": "Shakabay (Brest Area, France)",
+      "title": "Shakabay (Brest, France)",
       "start": {
         "day": 15,
         "month": 1,
@@ -109,10 +109,10 @@
   },
   "education": [
      {
-      "title": "Master degree - Computer Science",
+      "title": "Master's degree - Computer Science",
       "start": 2019,
       "end": "today",
-      "description": "Master of computer science degree in work-linked training",
+      "description": "Master of computer science degree in work-linked training at UBO college in Brest.",
       "certificate": null
     },
     {
@@ -126,14 +126,14 @@
       "title": "BTS - SIO",
       "start": "2016",
       "end": "2018",
-      "description": "BTS (Higher Technician Certificate) SIO (IT Services to Organizations), specialty SLAM (Software Solutions and Business Applications) at the Lycée Charles de Foucault in Brest.",
+      "description": "Computer technician certificate at Charles de Foucault high school in Brest.",
       "certificate": "images/certificates/bts-sio.pdf"
     },
     {
       "title": "STI2D",
       "start": "2014",
       "end": "2016",
-      "description": "STI2D baccalaureate diploma, \"pretty good\" awarded.",
+      "description": "Baccalaureate in Digital Technology at the Vauban High School in Brest.",
       "certificate": "images/certificates/sti2d.pdf"
     }
   ],
@@ -152,8 +152,8 @@
       "list": [
         "Brest club (CKB)",
         "Nationals tournaments (2013 to 2016)",
-        "Youth coaching",
-        "Labeling Center of Training (CLE) (2013-2015)"
+        "Youth supervision",
+        "Labelled Training Center (2013-2015)"
       ]
     },
     {
@@ -162,7 +162,7 @@
         "Role playing games (RPG)",
         "Strategy (RTS, TBS)",
         "Management",
-        "Shot games (FPS, TPS)"
+        "Shoting games (FPS, TPS)"
       ]
     },
     {
@@ -170,7 +170,7 @@
       "list": [
         "Notions of editing",
         "Elaboration of several short films in a group",
-        "Nomination for the festival \"Traveling Pocket\" organized by the association \"Clair Obscur\" and available on <a href=\"https://www.youtube.com/watch?v=PdAkVcdvGCs\" target=\"_blank\">YouTube</a>."
+        "In 2016, one of my short films was nominated for the \"Traveling Pocket\" festival organized by \"Clair Obscur\" and available on <a href=\"https://www.youtube.com/watch?v=PdAkVcdvGCs\" target=\"_blank\">YouTube</a>."
       ]
     }
   ],

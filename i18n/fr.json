@@ -25,7 +25,7 @@
   },
   "proExp": [
     {
-      "title": "Les Sentinelles du Web",
+      "title": "Les Sentinelles du Web (Brest)",
       "start": {
         "day": 15,
         "month": 4,
@@ -133,7 +133,7 @@
       "title": "STI2D",
       "start": 2014,
       "end": 2016,
-      "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest. Baccalauréat obtenue avec la mention &laquo; Assez Bien &raquo; et avec la moyenne de 13,5/20.",
+      "description": "STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), spécialité SIN (Système d’Information et Numérique) au lycée Vauban à Brest.",
       "certificate": "images/certificates/sti2d.pdf"
     }
   ],
