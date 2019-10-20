@@ -1,6 +1,0 @@
-if text doesn't appear in browser :
-
- 1. Select the text in Inkscape
- 2. In the Text menu, select Convert to Text
- 3. Save the document again
- 4. Refresh your browser
